@@ -1,0 +1,25 @@
+{
+    "21713_216F6_216D7_216D8_216D9_21669_2166A_2166B_2166C_2166D":{
+        "sensor_info": {
+            "android.sensor.accelerometer":{
+                "offset_x": 0.0,
+                "offset_y": 0.0,
+                "offset_z": 0.0
+            },
+            "android.sensor.gyroscope":{
+                "offset_x": 0.0,
+                "offset_y": 0.0,
+                "offset_z": 0.0
+            },
+            "android.sensor.light":{
+                "cali_para": 0
+            },
+            "android.sensor.proximity":{
+                "ps0_distance_delta": 0,
+                "ps0_offset": 1,
+                "ps1_distance_delta": 0,
+                "ps1_offset": 1
+            }
+        }
+    }
+}

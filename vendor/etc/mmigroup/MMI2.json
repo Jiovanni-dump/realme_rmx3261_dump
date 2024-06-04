@@ -1,0 +1,55 @@
+{
+  "itemConfig": [{
+		"showName": "VersionInfo"
+	},
+    {
+      "showName": "SdCard"
+    },
+    {
+      "showName": "MainSIMCard"
+    },
+    {
+      "showName": "SubSIMCard"
+    },
+    {
+      "showName": "DualCamera"
+    },
+    {
+      "showName": "Battery",
+        "support": true,
+        "paramconfig": {
+            "support_afc_charge": false
+        },
+        "S19615":{
+            "support": false
+        },
+        "S19617":{
+            "support": false
+        }
+    },
+	{
+		"showName": "NormalCharger",
+		"paramconfig": {
+			"support_afc_charge": false
+		}
+	},
+	{
+		"showName": "FastCharger",
+      "paramconfig": {
+        "support_afc_charge": false
+      }
+    },
+    {
+      "showName": "Backlight"
+    },
+	{
+	   "showName": "Magnetic"
+	},
+    {
+      "showName": "GPS"
+    },
+	{
+		"showName": "NFC"
+	}
+  ]
+}

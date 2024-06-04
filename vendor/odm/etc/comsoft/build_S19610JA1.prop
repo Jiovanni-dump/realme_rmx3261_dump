@@ -1,0 +1,7 @@
+#### Add Project Build Info ####
+ro.product.odm.model=RMX3262
+ro.product.odm.name=RMX3262
+ro.product.odm.device=RMX3262
+#OPPO_FINGERPRINT_TIME=1706178676000
+ro.odm.build.fingerprint=realme/RMX3262/RMX3262:11/RP1A.201005.001/1706178676000:user/release-keys
+import /odm/etc/comsoft/build_S19610_${ro.boot.country_region}.prop

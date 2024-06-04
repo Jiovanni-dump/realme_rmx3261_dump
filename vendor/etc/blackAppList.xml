@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app_list>
+<packageItem>
+<pkg_name>com.pp.assistant</pkg_name>
+</packageItem>
+<packageItem>
+<pkg_name>com.google.android.gms</pkg_name>
+</packageItem>
+<packageItem>
+<pkg_name>com.android.vending</pkg_name>
+</packageItem>
+<!--ifdef ODM_WT_EDIT-->
+<!--Lei.Fan@ODM_WT.Ad,2021/04/15,add opush alarm align-->
+<packageItem>
+<pkg_name>com.heytap.mcs</pkg_name>
+</packageItem>
+<!--endif ODM_WT_EDIT-->
+</app_list>

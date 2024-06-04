@@ -1,0 +1,175 @@
+{
+	"itemConfig": [{
+			"showName": "VersionInfo"
+		},
+		{
+			"showName": "KeyPad"
+		},
+		{
+			"showName": "Backlight"
+		},
+		{
+			"showName": "LCD",
+			"paramconfig": {
+				"auto_switch": false,
+				"lcd_pic": [
+					"Color_R",
+					"Color_G",
+					"Color_B",
+					"Color_W",
+					"Color_BL",
+					"Color_GR127"
+				]
+			}
+		},
+		{
+			"showName": "TouchPal"
+		},
+		{
+			"showName": "SdCard"
+		},
+		{
+			"showName": "MainSIMCard"
+		},
+		{
+			"showName": "SubSIMCard"
+		},
+		{
+			"showName": "MainCamera"
+		},
+		{
+			"showName": "DepthCamera"
+		},
+		{
+			"showName": "MacroCamera"
+		},
+		{
+			"showName": "FrontCamera"
+		},
+		{
+			"showName": "DualCamera"
+		},
+		{
+			"showName": "Flashlight"
+		},
+		{
+			"showName": "Speaker"
+		},
+		{
+			"showName": "Receiver"
+		},
+		{
+			"showName": "MainMicToReceiver"
+		},
+		{
+			"showName": "FM"
+		},
+		{
+			"showName": "HeadSet",
+			"paramconfig": {
+				"keyCode": [
+					"HEADSETHOOK"
+				]
+			}
+		},
+		{
+			"showName": "HsMicToHeadPhone",
+			"paramconfig": {
+				"needHeadsetUnPlug": true
+			}
+		},
+		{
+			"showName": "MainMicToHeadPhone"
+		},		
+		{
+			"showName": "RTC"
+		},
+		{
+			"showName": "Wlan"
+		},
+		{
+			"showName": "Bluetooth"
+		},
+		{
+			"showName": "GPS"
+		},
+		{
+			"showName": "Vibrator",
+			"paramconfig": {
+				"is_auto_vibrate": false
+			}
+		},
+		{
+			"showName": "Accelerometer",
+			"paramconfig": {
+				"support_calibrate": true,
+				"support_axialresult": true,
+				"support_angle45": true,
+				"support_angleneg45": true,
+				"is_auto_calibrate": false,
+				"support_plus_or_minus_45_degrees_either_pass_through": false,
+				"autoTest": {
+					"support_calibrate": true
+				}
+			}
+		},
+		{
+			"showName": "Optical"
+		},
+		{
+			"showName": "DarkOptical"
+		},
+		{
+			"showName": "Proximity"
+		},
+		{
+			"showName": "Magnetic"
+		},
+		{
+			"showName": "Gyroscope"
+		},
+		{
+			"showName": "Battery",
+			"support": true,
+			"paramconfig": {
+				"support_afc_charge": false
+			},
+			"S19615":{
+				"support": false
+			},
+			"S19617":{
+				"support": false
+			}
+		},
+		{
+			"showName": "NormalCharger",
+			"paramconfig": {
+				"support_afc_charge": false
+			}
+		},
+		{
+			"showName": "FastCharger",
+			"paramconfig": {
+				"support_afc_charge": false
+			}
+		},
+		{
+			"showName": "OTG"
+		},
+		{
+			"showName": "NFC"
+		},
+		{
+			"showName": "fingerprint"
+		},
+        {
+            "showName": "MainBoardSubBoardMatchTest",
+            "action": "com.mmigroup.action.SUB_MAINBOARDMATCH",
+            "support": true,
+            "automatic": false
+        },
+		{
+			"showName": "LPWGRawdata"
+		}
+	]
+}

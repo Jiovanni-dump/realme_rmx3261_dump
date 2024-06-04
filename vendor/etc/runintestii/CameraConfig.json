@@ -1,0 +1,92 @@
+{
+  "itemConfig": [
+    {
+      "Action": "com.factory.runintestii.cameraapi2test",
+      "Support": true,
+      "IsForeGround": true,
+      "RunAlone": false,
+      "Name": "camera_mainback",
+      "ParamOneCycle": 10,
+      "ParameOneCycleTime": "5000",
+      "Parameter": {
+        "istake_picture": true,
+        "support_flash": true,
+        "support_cameraCheck": true,
+        "support_cameraId": 0
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.cameraapi2test",
+      "Support": true,
+      "IsForeGround": true,
+      "RunAlone": false,
+      "Name": "camera_mainfront",
+      "ParamOneCycle": 10,
+      "ParameOneCycleTime": "5000",
+      "Parameter": {
+        "istake_picture": true,
+        "support_flash": false,
+        "support_cameraCheck": true,
+        "support_cameraId": 1
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.cameraapi2test",
+      "Support": true,
+      "IsForeGround": true,
+      "RunAlone": false,
+      "Name": "camera_subback",
+      "ParamOneCycle": 15,
+      "ParameOneCycleTime": "5000",
+      "Parameter": {
+        "istake_picture": true,
+        "support_flash": false,
+        "support_cameraCheck": true,
+        "support_cameraId": 2
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.cameraapi2test",
+      "Support": true,
+      "IsForeGround": true,
+      "RunAlone": false,
+      "Name": "camera_subback2",
+      "ParamOneCycle": 15,
+      "ParameOneCycleTime": "5000",
+      "Parameter": {
+        "istake_picture": true,
+        "support_flash": false,
+        "support_cameraCheck": true,
+        "support_cameraId": 3
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.camera2videoactivity",
+      "Support": true,
+      "IsForeGround": true,
+      "RunAlone": false,
+      "Name": "camera_mainback_video",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "120000",
+      "Parameter": {
+        "support_cameraId": 0,
+        "support_flash": true,
+        "interval": 2000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.camera2videoactivity",
+      "Support": true,
+      "IsForeGround": true,
+      "RunAlone": false,
+      "Name": "camera_mainfront_video",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "120000",
+      "Parameter": {
+        "support_cameraId": 1,
+        "support_flash": false,
+        "interval": 2000
+      }
+    }
+  ]
+}

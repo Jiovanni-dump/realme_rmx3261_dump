@@ -1,0 +1,4 @@
+#### Add Build RU Info ####
+ro.product.odm.name=RMX3261RU
+#OPPO_FINGERPRINT_TIME=1706178676000
+ro.odm.build.fingerprint=realme/RMX3261RU/RMX3261:11/RP1A.201005.001/1706178676000:user/release-keys

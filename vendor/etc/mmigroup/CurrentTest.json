@@ -1,0 +1,319 @@
+{
+	"itemConfig": [{
+			"showName": "VersionInfo"
+		},
+		{
+			"showName": "Battery",
+			"support_background_test": true,
+			"paramconfig": {
+				"support_afc_charge": false,
+				"check_usb_is_unplug": false,
+				"support_typec_check": false,
+				"Voltage": {
+					"min": 2500,
+					"max": 4500
+				},
+				"temp": {
+					"min": -20,
+					"max": 800
+				},
+				"ChargerVoltage": {
+					"min": 0,
+					"max": 0
+				},
+				"ChargerCurrent": {
+					"min": -3000,
+					"max": 1500
+				},
+				"errorBatteryId": [
+					"NULL",
+					"Not found",
+					"Generic_Battery"
+				]
+			}
+		},
+		{
+			"showName": "Wlan",
+			"support_background_test": true
+		},
+		{
+			"showName": "GPS",
+			"support_background_test": true
+		},
+		{
+			"showName": "Bluetooth",
+			"support_background_test": true
+		},
+		{
+			"showName": "SdCard",
+			"support_background_test": true
+		},
+		{
+			"showName": "MainSIMCard",
+			"support_background_test": true
+		},
+		{
+			"showName": "SubSIMCard",
+			"support_background_test": true
+		},
+		{
+			"showName": "Flashlight",
+			"paramconfig": {
+				"cameraId": 0,
+				"is_flash": false,
+				"support_cool": true,
+				"support_warm": false,
+				"flashLightType": "back"
+			}
+		},
+		{
+			"showName": "Accelerometer",
+			"paramconfig": {
+				"support_calibrate": false,
+				"support_axialresult": true,
+				"support_angle45": false,
+				"support_angleneg45": false,
+				"data_suffix_rate": 1000,
+				"gravity_45_degree_x": -4.9000,
+				"gravity_45_degree_y": 4.9000,
+				"gravity_45_degree_z": 6.9340,
+				"gravity_45_degree_tolerance": 0.71,
+				"gravity_axial_limit": 1.5,
+				"is_auto_calibrate": true
+			}
+		},
+		{
+			"showName": "Magnetic",
+			"paramconfig": {
+				"support_calibrate": false,
+				"support_draw": false,
+				"support_test": true,
+				"self_calibrate": false
+			}
+		},
+		{
+			"showName": "Optical",
+			"action": "com.mmigroup.action.OPTICAL",
+			"support": true,
+			"automatic": false,
+			"paramconfig": {
+				"lux_std": 0,
+				"lux_pet": 0,
+				"is_check_range": false,
+				 "value_change_in": 0
+			}
+		},
+		{
+			"showName": "Proximity"
+		},
+		{
+			"showName": "Gyroscope",
+			"paramconfig": {
+				"support_calibrate": false
+			}
+		},
+		{
+		    "showName": "LPWGRawdata"
+		},
+		{
+		    "showName": "TpOpenShort"
+		},
+		{
+		    "showName": "LCD_GR"
+		},
+		{
+			"showName": "KeyPad"
+		},
+		{
+			"showName": "Receiver",
+			"action": "com.mmigroup.action.audioloop.MTKATALOOPBACK",
+			"support": true,
+			"automatic": false,
+			"paramconfig": {
+				"volume_rate": 1.0,
+				"loop_type": "manual_loop1",
+				"is_show_list": false,
+				"audioConfig": [
+					"mmitest=on;inputdevice=mainmic",
+					"test_stream_route=1"
+				],
+				"freqLRange": {
+					"min": 1000,
+					"max": 7000
+				},
+				"freqRRange": {
+					"min": 1000,
+					"max": 7000
+				},
+				"amplLRange": {
+					"min": 0,
+					"max": 200
+				},
+				"amplRRange": {
+					"min": 0,
+					"max": 200
+				}
+			}
+		},
+		{
+			"showName": "Speaker",
+			"action": "com.mmigroup.action.audioloop.MTKATALOOPBACK",
+			"support": true,
+			"automatic": false,
+			"paramconfig": {
+				"volume_rate": 1.0,
+				"loop_type": "manual_loop1",
+				"is_show_list": false,
+				"audioConfig": [
+					"mmitest=on;inputdevice=mainmic",
+					"test_stream_route=2"
+				],
+				"freqLRange": {
+					"min": 700,
+					"max": 7000
+				},
+				"freqRRange": {
+					"min": 700,
+					"max": 7000
+				},
+				"amplLRange": {
+					"min": 0,
+					"max": 200
+				},
+				"amplRRange": {
+					"min": 0,
+					"max": 200
+				}
+			}
+		},
+        {
+          "showName": "HeadSet",
+          "action": "com.mmigroup.action.audioloop.MTKATALOOPBACK",
+          "support": true,
+          "automatic": false,
+          "paramconfig": {
+            "volume_rate": 1.0,
+            "loop_type": "manual_loop1",
+            "is_show_list": false,
+            "hasHeadPhone": true,
+            "audioConfig": [
+              "mmitest=on;inputdevice=headmic",
+              "mmitest=on;outputdevice=headphone"
+            ],
+            "freqLRange": {
+              "min": 700,
+              "max": 7000
+            },
+            "freqRRange": {
+              "min": 700,
+              "max": 7000
+            },
+            "amplLRange": {
+              "min": 0,
+              "max": 200
+            },
+            "amplRRange": {
+              "min": 0,
+              "max": 200
+            }
+          }
+        },
+		{
+			"showName": "HeadSetKey"
+		},
+		{
+			"showName": "OTG"
+		},
+		{
+			"showName": "Vibrator",
+			"paramconfig": {
+				"is_auto_vibrate": true,
+				"auto_vibrate_time":300000,
+				"randomVibSupport": false,
+				"shortInterval": [
+					200,
+					200
+				],
+				"longInterval": [
+					200,
+					1000
+				],
+				"randomInterval": [
+					6,
+					400,
+					400
+				]
+			}
+		},
+		{
+			"showName": "fingerprint",
+			"paramconfig": {
+				"is_need_nextButton": false,
+				"support_enrolTest": false,
+				"support_identifyTest": false
+			}
+		},
+        {
+			"showName": "MainCamera",
+			"paramconfig": {
+				"support_takepicture": false,
+				"auto_takepicture": false
+			}
+		},
+		{
+			"showName": "DepthCamera",
+			"paramconfig": {
+				"support_takepicture": false,
+				"auto_takepicture": false
+			}
+		},
+		{
+			"showName": "MacroCamera",
+			"paramconfig": {
+				"support_takepicture": false,
+				"auto_takepicture": false
+			}
+		},
+		{
+			"showName": "FrontCamera",
+			"paramconfig": {
+				"support_takepicture": false,
+				"auto_takepicture": false
+			}
+		},
+		{
+			"showName": "MainMic"
+		},
+		{
+			"showName": "Backlight_dark"
+		},
+		{
+			"showName": "Backlight_bright"
+		},
+		{
+		    "showName": "Backlight_half"
+		},
+		{
+			"showName": "LCD_R"
+		},
+		{
+			"showName": "LCD_G"
+		},
+		{
+		    "showName": "LCD_B"
+		},
+		{
+		    "showName": "LCD_W"
+		},
+		{
+		    "showName": "LCD_BL"
+		},
+		{
+		    "showName": "TouchPal"
+		},
+		{
+			"showName": "AirInterfaceTest"
+		}
+	]
+}
+

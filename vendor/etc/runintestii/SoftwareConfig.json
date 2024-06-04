@@ -1,0 +1,509 @@
+{
+  "itemConfig": [
+    {
+      "Action": "com.factory.runintestii.backlight",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Backlight",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "540000",
+      "Parameter": {
+        "interval": 1500
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.vibrator",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Vibrator",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "540000",
+      "Parameter": {
+        "vibrator_time": 3000,
+        "stop_vibrator_time": 2000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.lcdcolor",
+      "Support": true,
+      "IsForeGround": true,
+      "RunAlone": false,
+      "Name": "software_LCDTest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "540000",
+      "Parameter": {
+        "interval": 1500
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.pa",
+      "Support": false,
+      "IsForeGround": true,
+      "RunAlone": true,
+      "Name": "software_PATest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "42000000",
+      "Parameter": {
+        "interval": 1800000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.cpu",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_CPU",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "540000",
+      "Parameter": {
+        "interval": 1000,
+        "cpu_thread_num": 3,
+        "CpuFilePath": "vendor/bin",
+        "CpuTempPath": "/sys/devices/virtual/thermal/thermal_zone1/temp"
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.speaker",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Speaker",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "540000",
+      "Parameter": {
+        "volume_rate": 1
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.mainmic",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Mainmic",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "540000",
+      "Parameter": {
+        "volume_rate": 1,
+        "volume_stander": 20
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.flashtest",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_FlashTest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "540000",
+      "Parameter": {
+        "interval": 2000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.irledtest",
+      "Support": false,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_irledtest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "540000",
+      "Parameter": {
+        "interval": 5000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.sleeptest",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "software_sleeptest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "sleeptime": 180000,
+        "wakeuptime": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.fingertest",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_FingerTest",
+      "ParamOneCycle": 15,
+      "ParameOneCycleTime": "",
+      "Parameter": {
+        "interval": 5000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.infrared",
+      "Support": false,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Infrared",
+      "ParamOneCycle": 2,
+      "ParameOneCycleTime": "",
+      "Parameter": {
+        "interval": 5000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.pressure",
+      "Support": false,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Pressure",
+      "ParamOneCycle": 5,
+      "ParameOneCycleTime": "5000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.nfctest",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_NFC",
+      "ParamOneCycle": 15,
+      "ParameOneCycleTime": "",
+      "Parameter": {
+        "interval": 5000
+      },
+      "S19610AA1":{
+        "Support": false
+      },
+      "S19610BA1":{
+        "Support": false
+      },
+      "S19610CA1":{
+        "Support": false
+      },
+      "S19610DA1":{
+        "Support": false
+      },
+      "S19610JA1":{
+        "Support": false
+      },
+      "S19612AA1":{
+        "Support": false
+      },
+      "S19612BA1":{
+        "Support": false
+      },
+      "S19612CA1":{
+        "Support": false
+      },
+      "S19612DA1":{
+        "Support": false
+      },
+      "S19612JA1":{
+        "Support": false
+      },
+      "S19612KA1":{
+        "Support": false
+      },
+      "S19612LA1":{
+        "Support": false
+      },
+      "S19615AA1":{
+        "Support": false
+      },
+      "S19615BA1":{
+        "Support": false
+      },
+      "S19615MA1":{
+        "Support": false
+      },
+      "S19615NA1":{
+        "Support": false
+      },
+      "S19615PA1":{
+        "Support": false
+      },
+      "S19615QA1":{
+        "Support": false
+      },
+      "S19615RA1":{
+        "Support": false
+      },
+      "S19617":{
+        "Support": false
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.gsensor",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Gsensor",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.gyro",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Gyro",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.lightsensor",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_lightsensor",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.magnetic",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Magnetic",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.proximity",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Proximity",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.tpopenshort",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "software_TpOpenShort",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "60000",
+      "Parameter": {
+        "interval": 60000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.hardwarei2ctest",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "software_HardwareI2CTest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "",
+      "Parameter": {
+        "support_i2c_list":"Flash,Flash_fw,LCD,TP,Camera_Main,Camera_Main_modID,Camera_Sub,Camera_Sub_modID,Camera2_Sub,Camera2_Sub_modID,Camera2_Main,Camera2_Main_modID,Wlan,Bluetooth,GPS,Battery,BoardID,Accelerometer,Proximity,Optical,Gyroscope,Magnetic,FingerPrint,",
+        "interval": 5000
+      }
+    },
+
+    {
+      "Action": "com.factory.runintestii.videotest",
+      "Support": true,
+      "IsForeGround": true,
+      "RunAlone": false,
+      "Name": "software_VideoTest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "300000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.vibrator",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Vibrator",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "300000",
+      "Parameter": {
+        "vibrator_time": 3000,
+        "stop_vibrator_time": 2000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.ledtest",
+      "Support": false,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_LEDTest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "300000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.sleeptest",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "software_sleeptest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "120000",
+      "Parameter": {
+        "sleeptime": 120000,
+        "wakeuptime": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.vibrator",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Vibrator",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "vibrator_time": 3000,
+        "stop_vibrator_time": 2000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.gpu",
+      "Support": true,
+      "IsForeGround": true,
+      "RunAlone": false,
+      "Name": "software_GPU",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "interval": 6000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.receiver",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Receiver",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "volume_rate": 1
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.submic",
+      "Support": false,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Submic",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "volume_rate": 1,
+        "volume_stander": 20
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.sleeptest",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "software_sleeptest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "120000",
+      "Parameter": {
+        "sleeptime": 120000,
+        "wakeuptime": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.gsensor",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Gsensor",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.gyro",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Gyro",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.lightsensor",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_lightsensor",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.magnetic",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Magnetic",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.proximity",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Proximity",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "180000",
+      "Parameter": {
+        "interval": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.airplane",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "software_Airplane",
+      "ParamOneCycle": 30,
+      "ParameOneCycleTime": "10000",
+      "Parameter": {
+        "interval": 1000    
+      }
+    }
+  ]
+}
