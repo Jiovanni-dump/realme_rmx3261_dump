@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+<library name="androidx.camera.extensions.impl"
+file="/product/framework/unisoc.camerax.extensions.jar" />
+
+</permissions>
+
