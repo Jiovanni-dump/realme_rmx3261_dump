@@ -1,0 +1,18 @@
+
+# vowifi ipsec_server
+service ju_ipsec_server /system_ext/bin/ju_ipsec_server
+    class main
+    socket ju_ipsec_server stream 600 system system
+    user root
+    group root vpn
+
+# Enable prop persist.dbg.wfc_avail_ovr
+on property:persist.sys.vowifi.whitelist=true
+    setprop persist.dbg.wfc_avail_ovr 1
+
+on property:persist.sys.vowifi.lab.sim=true
+    setprop persist.dbg.wfc_avail_ovr 1
+
+on property:persist.sys.vowifi.lab.sim=false && property:persist.sys.vowifi.whitelist=false
+    setprop persist.dbg.wfc_avail_ovr 0
+

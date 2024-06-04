@@ -1,0 +1,4 @@
+service srmi_proxyd /system/bin/srmi_proxyd /dev/spipe_lte7 /dev/spipe_lte7 0
+    class main
+    user root
+    group system

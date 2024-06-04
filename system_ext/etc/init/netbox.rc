@@ -1,0 +1,9 @@
+service gro_on /system_ext/bin/netbox.sh gro on
+	user root
+	disabled
+	oneshot
+
+service gro_off /system_ext/bin/netbox.sh gro off
+	user root
+	disabled
+	oneshot

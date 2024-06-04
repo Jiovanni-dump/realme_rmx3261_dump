@@ -1,0 +1,17 @@
+adjust.preinstall.path=/data/etc/appchannel/adjust.preinstall
+io.branch.preinstall.apps.path=/data/etc/appchannel/pre_install_apps.branch
+net.bt.name=Android
+persist.sys.glance.lockscreen=1
+ro.appsflyer.preinstall.path=/data/etc/appchannel/pre_install.appsflyer
+ro.build.device_family=OPT610
+ro.build.display.wtid=SW_S19610AA1_V101_M11_R_Y_EU_USR_MP40
+ro.build.display.wtid.mp=SW_S19610AA1_V101_M11_R_USR_MP
+ro.build.version.ota=RMX3261_11_A.108_20240125171349
+ro.oppo.market.device_name=realme C21Y
+ro.preinstall.path=/data/etc/appchannel
+ro.trackingId.com.daraz.appid=/data/etc/appchannel/darazChannel.txt
+ro.trackingId.com.lzd.appid=/data/etc/appchannel/lazadaChannel.txt
+ro.trackingId.com.shop.appid=/data/etc/appchannel/shopChannel.txt
+ro.vendor.build.display.wtid=SW_S19610AA1_V101_M11_R_Y_EU_USR_MP40
+ro.vendor.build.version.ota=RMX3261_11_A.108_20240125171349
+ro.wifi.channels=

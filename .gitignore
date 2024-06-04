@@ -1,0 +1,9 @@
+system/system/apex/com.android.vndk.current.apex
+product/priv-app/GmsCore/GmsCore.apk
+product/priv-app/Velvet/Velvet.apk
+product/app/WebViewGoogle/WebViewGoogle.apk
+product/app/Messages/Messages.apk
+system_ext/vital-app/Snapchat/Snapchat.apk
+system_ext/vital-app/YandexAPP/YandexAPP.apk
+system_ext/vital-app/YandexBrowser/YandexBrowser.apk
+system_ext/vital-app/AmazonMusicEU/AmazonMusicEU.apk

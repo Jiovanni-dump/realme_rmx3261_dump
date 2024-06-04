@@ -1,0 +1,142 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init scripts
+sh_binary {
+    name: "log_to_csv.sh",
+    src: "bin/log_to_csv.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "loading.sh",
+    src: "bin/loading.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "para.sh",
+    src: "bin/para.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "total.sh",
+    src: "bin/total.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "engineer_vendor_shell.sh",
+    src: "bin/engineer_vendor_shell.sh",
+    vendor: true,
+}
+
+// Init configuration files
+prebuilt_etc {
+    name: "init.S19610AA1.rc",
+    src: "etc/init.S19610AA1.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.S19610AA1.usb.rc",
+    src: "etc/init.S19610AA1.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.cali.rc",
+    src: "etc/init.cali.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.factorytest.rc",
+    src: "etc/init.factorytest.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ram.rc",
+    src: "etc/init.ram.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.storage.rc",
+    src: "etc/init.storage.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums512_1h10.rc",
+    src: "etc/init.ums512_1h10.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums512_1h10.usb.rc",
+    src: "etc/init.ums512_1h10.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums512_1h10_go.rc",
+    src: "etc/init.ums512_1h10_go.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums512_1h10_go.usb.rc",
+    src: "etc/init.ums512_1h10_go.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums512_20c10.rc",
+    src: "etc/init.ums512_20c10.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums512_20c10.usb.rc",
+    src: "etc/init.ums512_20c10.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums512_2h10.rc",
+    src: "etc/init.ums512_2h10.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums512_2h10.usb.rc",
+    src: "etc/init.ums512_2h10.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+// fstab
+prebuilt_etc {
+    name: "fstab.ums512_1h10",
+    src: "etc/fstab.ums512_1h10",
+    vendor: true,
+}

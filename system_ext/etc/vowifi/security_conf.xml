@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AccountSettings>
+    <operator spn="Tele2 RUS" mcc="250" mnc="{020}" >
+        <apns>
+            <apn type="normal,sos" name="ims" />
+            <apn type="ut" name="hos.tele2.ru" />
+            <apn type="mms" name="mms.tele2.ru" />
+        </apns>
+        <profile fqdnPriorityType="hplmn" withProposal2="true" integType="HMAC_SHA2_256_128"
+            ipsecIntegType="HMAC_SHA2_256_128" prfType="HMAC_SHA2_256" withoutInitNotify="ut,mms" identifyIDrType="KEY_ID" />
+    </operator>
+    <operator spn="GLOBE PH" mcc="515" mnc="{002}">
+        <apns>
+            <apn type="normal,sos,mms" name="ims" />
+            <apn type="ut" name="xcap" prefIPv4="true" />
+        </apns>
+        <profile staticIp="weconnect.globe.com.ph" fqdnPriorityType="static" withProposal2="true" ipVersion="2" confPayloadSequence="10,16390"
+                 withoutInitNotify="ut" ipsecRekeyTimer="900" ikeRekeyTimer="900" />
+    </operator>
+</AccountSettings>
