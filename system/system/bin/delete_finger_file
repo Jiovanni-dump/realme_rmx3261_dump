@@ -1,0 +1,8 @@
+#! /system/bin/sh
+is_mmigroup=`getprop persist.sys.wt.finger_secret`
+echo "is_mmigroup = $is_mmigroup"
+if [ "$is_mmigroup" == "true" ];then
+	system/bin/locksettings clear --old 0000
+	input keyevent 26
+	setprop persist.sys.wt.finger_secret "false"
+fi

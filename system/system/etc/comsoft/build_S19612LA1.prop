@@ -1,0 +1,18 @@
+#### Add Project Build Info ####
+ro.product.model=RMX3261
+ro.product.system.model=RMX3261
+ro.product.name=RMX3261
+ro.product.system.name=RMX3261
+ro.product.device=RMX3261
+ro.product.system.device=RMX3261
+#OPPO_FINGERPRINT_TIME=1706178676000
+ro.oppo.market.device_name=realme C21Y
+ro.build.fingerprint=realme/RMX3261/RMX3261:11/RP1A.201005.001/1706178676000:user/release-keys
+ro.system.build.fingerprint=realme/RMX3261/RMX3261:11/RP1A.201005.001/1706178676000:user/release-keys
+ro.build.version.base_os=realme/RMX3261/RMX3261:11/RP1A.201005.001/1659717058000:user/release-keys
+#WT_PRODUCTION_VERSION=RMX3261_11_A.108
+ro.build.display.id=RMX3261_11_A.108
+ro.build.version.ota=RMX3261_11_A.108_20240125171349
+ro.vendor.build.version.ota=RMX3261_11_A.108_20240125171349
+ro.sys.fw.bg_apps_limit=16
+import /system/etc/comsoft/build_S19612_${ro.boot.country_region}.prop
