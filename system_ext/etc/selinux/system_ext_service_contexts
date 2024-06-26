@@ -1,0 +1,70 @@
+#line 1 "device/sprd/mpool/sepolicy/system/private/service_contexts"
+# add for srmi
+srmi                                      u:object_r:srmi_service:s0
+#for led notification
+ledsrv                                    u:object_r:led_service:s0
+
+addon                                     u:object_r:addon_service:s0
+# add for power
+powerguru                                 u:object_r:powerguru_service:s0
+power_ex                                  u:object_r:power_ex_service:s0
+sprd_power                                u:object_r:power_ex_service:s0
+# add for ssense
+SceneRecognize                            u:object_r:ssense_service:s0
+sprdssense                                u:object_r:ssense_service:s0
+# add for performance
+
+performance_fw                            u:object_r:performance_fw_service:s0
+# add for ccsa
+security                                  u:object_r:security_service:s0
+connectionEx                              u:object_r:connectionEx_service:s0
+network_adapter                           u:object_r:networkadapter_service:s0
+# add for fm
+
+# add for tele
+iphonesubinfoEx                           u:object_r:radio_service:s0
+phone_ex                                  u:object_r:radio_service:s0
+ismsEx                                    u:object_r:radio_service:s0
+ims_ex                                    u:object_r:radio_service:s0
+ims_ut_ex                                 u:object_r:radio_service:s0
+ims_doze_manager                          u:object_r:radio_service:s0
+simphonebookEx                            u:object_r:radio_service:s0
+irit                                      u:object_r:radio_service:s0
+phone_dmyk                                u:object_r:radio_service:s0
+ions_ex                                   u:object_r:radio_service:s0
+# add for VoLTE video call
+VideoCallEngineService                    u:object_r:vce_service:s0
+
+#fow unisocai
+unisocai                                  u:object_r:unisoc_ai_service:s0
+
+# add for tele
+oplus_telephony_ext                       u:object_r:radio_service:s0
+#line 1 "vendor/oppo_app/OppoEngineerMode/sepolicy/mtk/private/service_contexts"
+
+
+#ifdef VENDOR_EDIT
+#Jianrong.Zheng@PSW.AD.EngineeringMode.1071920, 2017/09/18, Add for oppo engineer service
+#engineer                                   u:object_r:engineer_service:s0
+#endif VENDOR_EDIT
+
+#line 1 "device/sprd/mpool/module/security/msepolicy/system/private/service_contexts"
+# add for ifaa
+ifaa                                      u:object_r:ifaa_service:s0
+#line 1 "device/sprd/mpool/module/media/msepolicy/system/private/service_contexts"
+fm                                        u:object_r:mediaserver_service:s0
+#line 1 "device/sprd/mpool/module/performance/msepolicy/system/private/service_contexts"
+performancemanager                        u:object_r:performancemanager_service:s0
+#line 1 "device/sprd/mpool/module/telephony/msepolicy/system/private/service_contexts"
+# Add UNISOC extended telephony services.
+uni_telephony                             u:object_r:radio_service:s0
+uni_phone                                 u:object_r:radio_service:s0
+uni_carrierconfig                         u:object_r:radio_service:s0
+tele_test_service                         u:object_r:radio_service:s0
+#line 1 "device/sprd/mpool/module/smartlink/msepolicy/system/private/service_contexts"
+#for linkturbonative
+linkturbonative                           u:object_r:linkturbonative_service:s0
+SmartlinkSdkService                       u:object_r:smartlink_service:s0
+#line 1 "device/sprd/mpool/module/cta/msepolicy/system/private/service_contexts"
+# add for CTA feature
+cta_permission                            u:object_r:cta_permission_service:s0

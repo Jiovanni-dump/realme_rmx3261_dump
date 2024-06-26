@@ -1,0 +1,10 @@
+net.bt.name=Android
+persist.sys.glance.lockscreen=1
+ro.build.device_family=OPT610
+ro.build.display.wtid=SW_S19610AA1_V089_M11_R_Y_USR_MP28_5
+ro.build.display.wtid.mp=SW_S19610AA1_V089_M11_R_USR_MP
+ro.build.version.ota=RMX3261_11_A.91_20220819191422
+ro.oppo.market.device_name=realme C21Y
+ro.vendor.build.display.wtid=SW_S19610AA1_V089_M11_R_Y_USR_MP28_5
+ro.vendor.build.version.ota=RMX3261_11_A.91_20220819191422
+ro.wifi.channels=

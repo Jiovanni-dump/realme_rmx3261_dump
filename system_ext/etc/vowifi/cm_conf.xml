@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AccountSettings>
+
+    <!-- AIRTEL INDIA -->
+    <operator spn="airtel" mcc="404" mnc="{00[2|3],01[0|6],031,04[0|5|9],070,09[0|2-8]}"
+        vowifiOnAirPlaneMode            = "false"
+        wifiIdleRssiLow                 = "-85"
+        wifiIdleRssiHigh                = "-65"
+        wifiCallRssiLow                 = "-85"
+        wifiCallRssiHigh                = "-65"
+        cellularPreferred432Vowifi      = "true"
+    />
+
+    <operator spn="airtel" mcc="405" mnc="{05[1-6]}"
+        vowifiOnAirPlaneMode            = "false"
+        wifiIdleRssiLow                 = "-85"
+        wifiIdleRssiHigh                = "-65"
+        wifiCallRssiLow                 = "-85"
+        wifiCallRssiHigh                = "-65"
+        cellularPreferred432Vowifi      = "true"
+    />
+</AccountSettings>

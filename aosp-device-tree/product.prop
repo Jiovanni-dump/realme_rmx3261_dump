@@ -1,0 +1,17 @@
+persist.netmon.linger=10000
+persist.radio.reboot_on_modem_change=true
+persist.storage.type=2
+ro.carrier=oversea
+ro.com.google.gmsversion=11_202203
+ro.config.alarm_alert=delight.ogg
+ro.config.alarm_vol_default=12
+ro.config.media_vol_default=10
+ro.config.notification_sound=notification_004.ogg
+ro.config.ring_vol_default=10
+ro.config.ringtone=ringtone_001.ogg,ringtone_001.ogg
+ro.config.vc_call_vol_default=5
+ro.opa.eligible_device=true
+ro.postinstall.fstab.prefix=/product
+ro.setupwizard.rotation_locked=true
+setupwizard.theme=glif_v3_light
+sys.internal.emulated=1

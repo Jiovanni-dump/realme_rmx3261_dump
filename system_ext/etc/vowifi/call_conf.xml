@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AccountSettings>
+    <operator spn="Telekom PL" mcc="260" mnc="{002}" eccCsfbWithoutUrn="true" voiceCodec="AMR,AMR-NO-OCTET-ALIGN" voicePriority="AMR,AMR-NO-OCTET-ALIGN" voiceCodecPayload="[AMR:99],[AMR-NO-OCTET-ALIGN:102],[AMR-WB:100],[AMR-WB-NO-OCTET-ALIGN:104],[telephone-event:96]" />
+    <operator spn="Vinaphone" mcc="452" mnc="{002}" uriFormatType="sip" retryCodeList="403" />
+</AccountSettings>
