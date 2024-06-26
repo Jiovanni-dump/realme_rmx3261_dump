@@ -1,0 +1,1 @@
+com.shopee.vn=oppo_int

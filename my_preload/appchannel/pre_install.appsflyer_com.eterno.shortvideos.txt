@@ -1,0 +1,1 @@
+com.eterno.shortvideos = {"pid": "oppo_int","c": "Preload","af_adset": "3.2.16"}

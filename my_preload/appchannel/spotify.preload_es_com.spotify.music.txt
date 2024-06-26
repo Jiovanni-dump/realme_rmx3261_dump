@@ -1,0 +1,2 @@
+referrer=oppo_sea_preload
+partner=oppo_sea_preload

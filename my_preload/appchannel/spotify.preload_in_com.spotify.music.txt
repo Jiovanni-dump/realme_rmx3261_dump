@@ -1,0 +1,2 @@
+referrer=oppo_in_preload
+partner=oppo_in_preload
