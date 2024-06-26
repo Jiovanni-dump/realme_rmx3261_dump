@@ -1,0 +1,4 @@
+#### Add Build Info With Turkey ####
+ro.product.product.name=RMX3261TR
+#OPPO_FINGERPRINT_TIME=1660911776000
+ro.product.build.fingerprint=realme/RMX3261TR/RMX3261:11/RP1A.201005.001/1660911776000:user/release-keys
