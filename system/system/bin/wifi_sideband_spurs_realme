@@ -1,0 +1,60 @@
+#!/vendor/bin/sh
+
+apply_sideband() {
+    if [ "$1" = 1 ];
+    then
+        cmd1="/vendor/bin/iwnpi wlan0 set_power_backoff 1 16 0 11 0 "
+        cmd2="/vendor/bin/iwnpi wlan0 set_power_backoff 1 15 1 1 0 "
+        cmd3="/vendor/bin/iwnpi wlan0 set_power_backoff 1 14 1 10 0 "
+        cmd4="/vendor/bin/iwnpi wlan0 set_power_backoff 1 11 1 11 0 "
+        cmd5="/vendor/bin/iwnpi wlan0 set_power_backoff 1 13 2 1 0 "
+        cmd6="/vendor/bin/iwnpi wlan0 set_power_backoff 1 11 2 10 0 "
+        cmd7="/vendor/bin/iwnpi wlan0 set_power_backoff 1 11 2 11 0 "
+        cmd8="/vendor/bin/iwnpi wlan0 set_power_backoff 1 9 2 3 1 "
+        cmd9="/vendor/bin/iwnpi wlan0 set_power_backoff 1 9 2 8 1 "
+        cmd10="/vendor/bin/iwnpi wlan0 set_power_backoff 1 8 2 9 1 "
+        cmd="$cmd1$cmd2$cmd3$cmd4$cmd5$cmd6$cmd7$cmd8$cmd9$cmd10"
+        echo "sys.wifi.sideband is 1"
+        echo "$cmd"
+        $cmd1
+        $cmd2
+        $cmd3
+        $cmd4
+        $cmd5
+        $cmd6
+        $cmd7
+        $cmd8
+        $cmd9
+        $cmd10
+    elif [ "$1" = 2 ];
+    then
+        cmd1="/vendor/bin/iwnpi wlan0 set_power_backoff 1 16 0 11 0 "
+        cmd2="/vendor/bin/iwnpi wlan0 set_power_backoff 1 15 1 1 0 "
+        cmd3="/vendor/bin/iwnpi wlan0 set_power_backoff 1 14 1 10 0 "
+        cmd4="/vendor/bin/iwnpi wlan0 set_power_backoff 1 11 1 11 0 "
+        cmd5="/vendor/bin/iwnpi wlan0 set_power_backoff 1 11 2 1 0 "
+        cmd6="/vendor/bin/iwnpi wlan0 set_power_backoff 1 11 2 10 0 "
+        cmd7="/vendor/bin/iwnpi wlan0 set_power_backoff 1 11 2 11 0 "
+        cmd8="/vendor/bin/iwnpi wlan0 set_power_backoff 1 9 2 3 1 "
+        cmd9="/vendor/bin/iwnpi wlan0 set_power_backoff 1 9 2 8 1 "
+        cmd10="/vendor/bin/iwnpi wlan0 set_power_backoff 1 8 2 9 1 "
+        cmd="$cmd1$cmd2$cmd3$cmd4$cmd5$cmd6$cmd7$cmd8$cmd9$cmd10"
+        echo "sys.wifi.sideband is 2"
+        echo "$cmd"
+        $cmd1
+        $cmd2
+        $cmd3
+        $cmd4
+        $cmd5
+        $cmd6
+        $cmd7
+        $cmd8
+        $cmd9
+        $cmd10
+    else
+        echo "sys.wifi.sideband is 0"
+    fi
+
+}
+backoff_power=$(getprop "sys.wifi.sideband" "0")
+apply_sideband $backoff_power

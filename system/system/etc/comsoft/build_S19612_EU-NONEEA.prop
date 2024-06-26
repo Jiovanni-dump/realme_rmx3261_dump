@@ -1,0 +1,7 @@
+#### Add Build Info With Turkey ####
+ro.product.name=RMX3263BA
+ro.product.system.name=RMX3263BA
+#OPPO_FINGERPRINT_TIME=1660911776000
+ro.build.fingerprint=realme/RMX3263BA/RED8D1:11/RP1A.201005.001/1660911776000:user/release-keys
+ro.system.build.fingerprint=realme/RMX3263BA/RED8D1:11/RP1A.201005.001/1660911776000:user/release-keys
+ro.build.version.base_os=realme/RMX3263BA/RED8D1:11/RP1A.201005.001/1659737024000:user/release-keys

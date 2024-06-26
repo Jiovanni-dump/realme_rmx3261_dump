@@ -1,0 +1,3 @@
+#### Add Project Build Info ####
+ro.sys.fw.bg_apps_limit=16
+import /system/etc/comsoft/build_S19610_${ro.boot.country_region}.prop

@@ -1,0 +1,5 @@
+#### Add Project Build Info ####
+ro.com.google.rlz_ap_whitelist=YF
+ro.com.google.rlzbrandcode=OPPO
+ro.sys.fw.bg_apps_limit=16
+import /system/etc/comsoft/build_S19610_${ro.boot.country_region}.prop

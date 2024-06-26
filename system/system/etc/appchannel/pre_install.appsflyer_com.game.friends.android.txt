@@ -1,0 +1,1 @@
+com.game.friends.android={"pid":"oppo_int", "c":"oppo_pre"}

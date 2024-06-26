@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wifisar>
+    <project name="S19612AA1">
+        <region name="Asia-IN">
+            <wifi_head_sar>0,0,0,0</wifi_head_sar>
+            <wifi_body_sar>0,0,0,0</wifi_body_sar>
+            <gsm_wifi_head_sar>0,0,0,0</gsm_wifi_head_sar>
+            <gsm_wifi_body_sar>0,0,0,0</gsm_wifi_body_sar>
+        </region>
+        <region name="Asia-NoIN">
+            <wifi_head_sar>0,0,0,0</wifi_head_sar>
+            <wifi_body_sar>0,0,0,0</wifi_body_sar>
+            <gsm_wifi_head_sar>0,0,0,0</gsm_wifi_head_sar>
+            <gsm_wifi_body_sar>0,0,0,0</gsm_wifi_body_sar>
+        </region>
+       <region name="Global-FCC">
+            <wifi_head_sar>1,0,0,0</wifi_head_sar>
+            <wifi_body_sar>0,0,0,0</wifi_body_sar>
+            <gsm_wifi_head_sar>1,0,0,0</gsm_wifi_head_sar>
+            <gsm_wifi_body_sar>2,0,0,0</gsm_wifi_body_sar>
+        </region>
+        <region name="Global-CE">
+            <wifi_head_sar>0,0,0,0</wifi_head_sar>
+            <wifi_body_sar>0,0,0,0</wifi_body_sar>
+            <gsm_wifi_head_sar>0,0,0,0</gsm_wifi_head_sar>
+            <gsm_wifi_body_sar>0,0,0,0</gsm_wifi_body_sar>
+        </region>
+        <region name="ALLBand-EU">
+            <wifi_head_sar>0,0,0,0</wifi_head_sar>
+            <wifi_body_sar>0,0,0,0</wifi_body_sar>
+            <gsm_wifi_head_sar>0,0,0,0</gsm_wifi_head_sar>
+            <gsm_wifi_body_sar>0,0,0,0</gsm_wifi_body_sar>
+        </region>
+        <region name="ALLBand">
+            <wifi_head_sar>0,0,0,0</wifi_head_sar>
+            <wifi_body_sar>0,0,0,0</wifi_body_sar>
+            <gsm_wifi_head_sar>0,0,0,0</gsm_wifi_head_sar>
+            <gsm_wifi_body_sar>0,0,0,0</gsm_wifi_body_sar>
+        </region>
+       <region name="ALL">
+            <wifi_head_sar>0,0,0,0</wifi_head_sar>
+            <wifi_body_sar>0,0,0,0</wifi_body_sar>
+            <gsm_wifi_head_sar>0,0,0,0</gsm_wifi_head_sar>
+            <gsm_wifi_body_sar>0,0,0,0</gsm_wifi_body_sar>
+        </region>
+    </project>
+</wifisar>

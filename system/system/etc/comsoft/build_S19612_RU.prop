@@ -1,0 +1,7 @@
+#### Add Build RU Info ####
+ro.product.name=RMX3263RU
+ro.product.system.name=RMX3263RU
+#OPPO_FINGERPRINT_TIME=1660911776000
+ro.build.fingerprint=realme/RMX3263RU/RED8D1:11/RP1A.201005.001/1660911776000:user/release-keys
+ro.system.build.fingerprint=realme/RMX3263RU/RED8D1:11/RP1A.201005.001/1660911776000:user/release-keys
+ro.build.version.base_os=realme/RMX3263RU/RED8D1:11/RP1A.201005.001/1659717058000:user/release-keys

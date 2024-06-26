@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<eccListOverrides>
+    <eccListOverrides operator="ru"     ecclist="112@0"/>
+    <eccListOverrides operator="cl"     ecclist="133@1,112@1,911@1"/>
+    <eccListOverrides operator="46601"  ecclist="112@2" />
+</eccListOverrides>

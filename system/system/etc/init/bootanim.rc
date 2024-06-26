@@ -1,0 +1,9 @@
+service bootanim /system/bin/bootanimation
+    class core animation
+    user graphics
+    group graphics audio
+    disabled
+    oneshot
+    ioprio rt 0
+    writepid /dev/cpuset/system-background/tasks
+    task_profiles MaxPerformance
