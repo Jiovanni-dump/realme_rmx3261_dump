@@ -1,0 +1,1 @@
+Unisoc: S19610AA1_ctcc_user_native

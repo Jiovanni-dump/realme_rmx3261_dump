@@ -1,0 +1,8 @@
+service interfaces.factoryInterface@1.0-service /vendor/bin/hw/interfaces.factoryInterface@1.0-service
+    class late_start
+    user root
+    group system sdcard_rw sdcard_r media_rw oem_2901 radio root audio
+    seclabel u:r:factory_services:s0
+
+on property:vendor.ro.bootmode=cali
+    start interfaces.factoryInterface@1.0-service

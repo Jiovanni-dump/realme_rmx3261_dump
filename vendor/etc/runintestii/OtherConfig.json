@@ -1,0 +1,160 @@
+{
+  "CommonConfig": {
+    "rebootCycleNum": 15,
+    "softwareCycleNum": 2,
+    "cameraCycleNum": 1,
+    "otherCycleNum": 1
+  },
+  "CommonConstant": {
+    "global_config": {
+      "support_control_battery_level": true,
+      "RunInConfigPath": "/vendor/etc",
+      "ReortPath": "data/anr",
+      "LogPath": "data/anr",
+      "SecretCodeName": "806",
+      "is_run_on_xm": false,
+      "RuninReportPath": "/data/data/com.factory.runintestii/files/report.dat"
+    },
+    "global_battery_config": {
+      "HighBatterLevel": 75,
+      "LowBatterLevel": 50,
+      "RunInStartBatterLevel": 40,
+      "HighTemperatureLeve": 60,
+      "LowTemperatureLeve": -15
+    },
+     "pre_check_config": {
+       "IsEnterByApkMethod": false,
+       "Pre-stationsCheckFlag": [
+         {
+           "MMIGROUP_FLAG_MMIMANUAL": 1
+         },
+         {
+           "MMIGROUP_FLAG_MMIATA": 2,
+           "MMIGROUP_FLAG_MMIATAMANUAL": 11
+         }
+       ]
+     },
+    "stability_config": {
+      "StabilitySupport": true,
+      "StabilitySecretCode": "11"
+    },
+    "mainUi_config": {
+      "hours": [
+        2, 4, 6, 8, 12, 16, 24, 48, 990, 991, 992, 993, 994, 995
+      ]
+    }
+  },
+  "itemConfig": [
+    {
+      "Action": "com.factory.runintestii.emmctest",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "other_EMMCtest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "3000000",
+      "Parameter": {
+        "EmmcReadWriteWaittime": 150,
+        "remained_space_rate": 0.1
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.emmcnormalthread",
+      "Support": false,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "other_EMMCtest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "1200000",
+      "Parameter": {
+        "EmmcReadWriteWaittime": 100,
+        "remained_space_rate": 0.1
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.emmcrandomthread",
+      "Support": false,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "other_EMMCtest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "1200000",
+      "Parameter": {
+        "EmmcReadWriteWaittime": 100,
+        "remained_space_rate": 0.1,
+        "testNode": "/sdcard/emmctest",
+        "testtimes": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.emmcrandomorderedthread",
+      "Support": false,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "other_EMMCtest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "1200000",
+      "Parameter": {
+        "EmmcReadWriteWaittime": 100,
+        "remained_space_rate": 0.1,
+        "testNode": "/sdcard/emmctest"
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.emmcinterferencethread",
+      "Support": false,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "other_EMMCtest",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "1200000",
+      "Parameter": {
+        "EmmcReadWriteWaittime": 100,
+        "remained_space_rate": 0.1,
+        "testNode": "/sdcard/emmctest",
+        "testtimes": 1000
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.CPUFreqService",
+      "Support": false,
+      "IsForeGround": false,
+      "RunAlone": false,
+      "Name": "other_CPUFreq",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "3600000"
+    },
+    {
+      "Action": "com.factory.runintestii.ddrtest",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "other_DDR",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "360000",
+      "Parameter": {
+        "DDRFilePath": "system/bin"
+      }
+    },
+    {
+      "Action": "com.factory.runintestii.QMESAtest",
+      "Support": false,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "other_QMESA",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "360000",
+      "Parameter": {}
+    },
+    {
+      "Action": "com.factory.runintestii.subsystemreboot",
+      "Support": true,
+      "IsForeGround": false,
+      "RunAlone": true,
+      "Name": "reboot_subsystemreboot",
+      "ParamOneCycle": 1,
+      "ParameOneCycleTime": "",
+      "Parameter": {}
+    }
+  ]
+}

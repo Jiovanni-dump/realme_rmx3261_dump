@@ -1,0 +1,59 @@
+on property:ro.bootmode=charger
+    insmod /vendor/lib/modules/leds-sprd-bltc-rgb.ko
+ 
+    mkdir /mnt/vendor 0771 system system
+    mount ext4 /dev/block/platform/soc/soc:ap-apb/71400000.sdio/by-name/prodnv /mnt/vendor
+    chown system system /mnt/vendor
+    chmod 0771 /mnt/vendor
+
+    chmod 664 /sys/class/leds/red/brightness
+    chmod 664 /sys/class/leds/green/brightness
+    chmod 664 /sys/class/leds/blue/brightness
+    chmod 664 /sys/power/wakeup_count
+
+    chown root system /sys/class/leds/red/brightness
+    chown root system /sys/class/leds/green/brightness
+    chown root system /sys/class/leds/blue/brightness
+
+on property:ro.debuggable=1
+    start console
+
+on early-init
+    start ueventd
+
+on charger
+#    exec_start apexd-bootstrap
+    class_start charger
+
+service ueventd /system/bin/ueventd
+    class core
+    critical
+    seclabel u:r:ueventd:s0
+    shutdown critical
+
+service apexd /system/bin/apexd
+    class core
+    critical
+    user root
+    group system
+    shutdown critical
+
+service apexd-bootstrap /system/bin/apexd --bootstrap
+    user root
+    group system
+    oneshot
+    disabled
+
+service console /system/bin/sh
+    class core
+    console
+    user shell
+    group shell log readproc
+    seclabel u:r:shell:s0
+    setenv HOSTNAME console
+
+service vendor.charge /vendor/bin/charge
+    class charger
+    group input system
+    user root
+    oneshot

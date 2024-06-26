@@ -1,0 +1,59 @@
+{
+  "itemConfig": [
+    {
+      "showName": "FlashLightCali",
+      "action": "com.mmigroup.action.ThreeAppTest",
+      "support": true,
+      "automatic": false,
+      "paramconfig":{
+        "pkg":"com.oppo.engineermode.camera",
+        "cls":"com.oppo.engineermode.camera.manualtest.FlashLightCalibrate",
+        "return_adb_broadcast_result": true,
+        "req_code": "1001",
+        "auto_exit": true
+      }
+    },
+    {
+      "showName": "DualCameraCali",
+      "action": "com.mmigroup.action.ThreeAppTest",
+      "support": true,
+      "automatic": false,
+      "paramconfig": {
+        "pkg": "com.sprd.cameracalibration",
+        "cls": "com.sprd.cameracalibration.itemstest.camera.CameraCalibrationVCMActivity",
+        "return_adb_broadcast_result": true,
+        "req_code": "1002",
+        "auto_exit": true
+       }
+    },
+    {
+      "showName": "DualCameraVerify",
+      "action": "com.mmigroup.action.ThreeAppTest",
+      "support": true,
+      "automatic": false,
+      "paramconfig":{
+        "pkg":"com.sprd.cameracalibration",
+        "cls":"com.sprd.cameracalibration.itemstest.camera.CameraVerificationVCMActivity",
+        "return_adb_broadcast_result": true,
+        "req_code": "1003",
+        "auto_exit":true
+      }
+    },    
+    {
+      "showName": "DualCameraEV",
+      "action": "com.mmigroup.action.ThreeAppTest",
+      "support": true,
+      "automatic": false,
+      "paramconfig":{
+        "pkg":"com.android.camera2",
+        "cls":"com.android.camera.CameraLauncher",
+        "return_adb_broadcast_result": true,
+        "auto_exit":false,
+        "extra_info": {
+          "wt_mmigroup_launch": "true",
+          "pref_camera_id_key": "0"
+        }
+      }
+    }
+  ]
+}

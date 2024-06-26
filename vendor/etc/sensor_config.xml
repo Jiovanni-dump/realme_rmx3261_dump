@@ -1,0 +1,168 @@
+  <root>
+  <!--
+  SensorRole support list:
+      single_ir, single_macro
+      dualcam_master, dualcam_slave
+      multicam_superwide, multicam_wide,multicam_tele
+      stl3d_rgb, stl3d_ir_left, stl3d_ir_right
+
+  Rules:
+      1. SensorRole string is the back part of enum sensor_role
+         in cmr_common.h, convert to lowercase letters.
+      2. If no SensorRole, regard single as default.
+      3. Max SensorRole configured number of a sensor is 8,
+         SensorRole number beyond 8 will be ignored.
+      4. At the same facing, the same SensorRole only can exist
+         one for different sensors. If multiple, only the first one
+         is valid. For example, at Facing BACK, only support one
+         dualcam_master, the next dualcam_master will be ignored.
+         But you can define a dualcam_master at Facing FRONT at the
+         same time.
+      5. For the same sensor, the SensorRole of same type only can
+         exist one. (Generally the same type SensorRoles are mutually
+         exclusive.) If multiple, only the last one is valid. For
+         example, sensor ov32a1q has a SensorRole dualcam_master,
+         then has a SensorRole dualcam_slave, the final dualcam
+         SensorRole of ov32a1q is dualcam_slave. But you can define
+         a multicam_wide for ov32a1q at the same time.
+      6. SensorRoles should be added continuously after Resource_cost.
+         Please don't put them in other place.
+      7. SensorRoles can be added without order. For example, you can
+         input dualcam_master first, then input multicam_wide; also can
+         input multicam_wide first, then input dualcam_master.
+  -->
+  <!-->
+  sensor id 0
+  <-->
+      <CameraModuleCfg>
+        <SlotId>0</SlotId>
+        <SensorName>y_hi1336_main_txd</SensorName>
+        <Facing>BACK</Facing>
+        <Orientation>90</Orientation>
+        <Resource_cost>55</Resource_cost>
+        <SensorRole>dualcam_master</SensorRole>
+        <ConflictingDevice>1</ConflictingDevice>
+	<OTP>
+            <E2prom>
+                <OtpName>general</OtpName>
+                <I2cAddr>0xa0</I2cAddr>
+                <E2promNum>2</E2promNum>
+                <E2promSize>8192</E2promSize>
+            </E2prom>
+        </OTP>
+        <VCM>
+            <AfName>gt9772</AfName>
+            <Mode>0</Mode>
+        </VCM>
+        <TuningParameter>
+            <TuningName>y_hi1336_main_txd</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+      <CameraModuleCfg>
+        <SlotId>0</SlotId>
+        <SensorName>y_s5k3l6xx03_main_xl_2</SensorName>
+        <Facing>BACK</Facing>
+        <Orientation>90</Orientation>
+        <Resource_cost>55</Resource_cost>
+        <SensorRole>dualcam_master</SensorRole>
+        <ConflictingDevice>1</ConflictingDevice>
+        <VCM>
+            <AfName>gt9772</AfName>
+            <Mode>0</Mode>
+        </VCM>
+        <TuningParameter>
+            <TuningName>y_s5k3l6xx03_main_xl_2</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+  <!-->
+  sensor id 1
+  <-->
+      <CameraModuleCfg>
+        <SlotId>1</SlotId>
+        <SensorName>y_hi556_front_ly</SensorName>
+        <Facing>FRONT</Facing>
+        <Orientation>270</Orientation>
+        <Resource_cost>100</Resource_cost>
+        <ConflictingDevice>0</ConflictingDevice>
+        <OTP>
+            <E2prom>
+                <OtpName>general</OtpName>
+                <I2cAddr>0x41</I2cAddr>
+                <E2promNum>0</E2promNum>
+                <E2promSize>7167</E2promSize>
+            </E2prom>
+        </OTP>
+        <TuningParameter>
+            <TuningName>y_hi556_front_ly</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+	        <CameraModuleCfg>
+        <SlotId>1</SlotId>
+        <SensorName>y_gc5035_front_cxt_2</SensorName>
+        <Facing>FRONT</Facing>
+        <Orientation>270</Orientation>
+        <Resource_cost>100</Resource_cost>
+        <ConflictingDevice>0</ConflictingDevice>
+        <TuningParameter>
+            <TuningName>y_gc5035_front_cxt_2</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+  <!-->
+  sensor id 2
+  <-->
+      <CameraModuleCfg>
+        <SlotId>2</SlotId>
+        <SensorName>y_gc02m1b_depth_lh</SensorName>
+        <Facing>BACK</Facing>
+        <Orientation>90</Orientation>
+        <Resource_cost>45</Resource_cost>
+        <SensorRole>dualcam_slave</SensorRole>
+        <TuningParameter>
+            <TuningName>y_gc02m1b_depth_lh</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+	  <CameraModuleCfg>
+        <SlotId>2</SlotId>
+        <SensorName>y_gc02m1b_depth_lh_2</SensorName>
+        <Facing>BACK</Facing>
+        <Orientation>90</Orientation>
+        <Resource_cost>45</Resource_cost>
+        <SensorRole>dualcam_slave</SensorRole>
+        <TuningParameter>
+            <TuningName>y_gc02m1b_depth_lh_2</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+  <!-->
+  sensor id 3
+  <-->
+      <CameraModuleCfg>
+        <SlotId>3</SlotId>
+        <SensorName>y_gc02m1_macro_lh</SensorName>
+        <Facing>BACK</Facing>
+        <Orientation>90</Orientation>
+        <Resource_cost>0</Resource_cost>
+        <SensorRole>single_macro</SensorRole>
+	<OTP>
+            <E2prom>
+                <OtpName>general</OtpName>
+                <I2cAddr>0xa4</I2cAddr>
+                <E2promNum>0</E2promNum>
+                <E2promSize>8192</E2promSize>
+            </E2prom>
+        </OTP>
+        <TuningParameter>
+            <TuningName>y_gc02m1_macro_lh</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+	  <CameraModuleCfg>
+        <SlotId>3</SlotId>
+        <SensorName>y_gc02m1_macro_cxt_2</SensorName>
+        <Facing>BACK</Facing>
+        <Orientation>90</Orientation>
+        <Resource_cost>0</Resource_cost>
+        <SensorRole>single_macro</SensorRole>
+        <TuningParameter>
+            <TuningName>y_gc02m1_macro_cxt_2</TuningName>
+        </TuningParameter>
+      </CameraModuleCfg>
+  </root>

@@ -1,0 +1,221 @@
+{
+  "itemConfig": [
+    {
+      "showName": "MainCamera_RAW",
+      "paramconfig": {
+        "auto_takepicture_delay": 4000
+      }
+    },
+    {
+      "showName": "MainCamera",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 0,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "takepicture_not_save_picture": false,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "picture_dir": "/data/vendor/fac_sources/FTM_AP",
+        "picture_name": "MainCameraATAJPG",
+        "outputsize": "4160x3120",
+        "pic_format": "JPEG",
+        "auto_takepicture_delay": 4000
+      },
+      "requestComm": [
+        "MainCamera"
+      ]
+    },
+    {
+      "showName": "WideCamera_RAW",
+      "paramconfig": {
+        "auto_takepicture_delay": 2000
+      }
+    },
+    {
+      "showName": "WideCamera",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 5,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "takepicture_not_save_picture": false,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "picture_name": "WideCameraATAJPG",
+        "outputsize": "3264x2448",
+        "pic_format": "JPEG",
+        "auto_takepicture_delay": 2000
+      },
+      "requestComm": [
+        "WideCamera"
+      ]
+    },
+    {
+      "showName": "MacroCamera_RAW",
+      "paramconfig": {
+        "auto_takepicture_delay": 2000
+      }
+    },
+    {
+      "showName": "MacroCamera",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 3,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "takepicture_not_save_picture": false,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "picture_dir": "/data/vendor/fac_sources/FTM_AP",
+        "picture_name": "MacroCameraATAJPG",
+        "outputsize": "1600x1200",
+        "pic_format": "JPEG",
+        "auto_takepicture_delay": 2000
+      },
+      "requestComm": [
+        "MacroCamera"
+      ]
+    },
+    {
+      "showName": "DepthCamera_RAW",
+      "paramconfig": {
+        "auto_takepicture_delay": 2000
+      }
+    },
+    {
+      "showName": "DepthCamera",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 2,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "takepicture_not_save_picture": false,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "picture_dir": "/data/vendor/fac_sources/FTM_AP",
+        "picture_name": "DepthCameraATAJPG",
+        "outputsize": "1600x1200",
+        "pic_format": "JPEG",
+        "auto_takepicture_delay": 2000
+      },
+      "requestComm": [
+        "DepthCamera"
+      ]
+    },
+    {
+      "showName": "FrontCamera_RAW",
+      "paramconfig": {
+        "takepicture_not_save_picture": true,
+        "outputsize": "4656x3496",
+        "auto_takepicture_delay": 2000
+      }
+    },
+    {
+      "showName": "FrontCamera",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 1,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "takepicture_not_save_picture": false,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "picture_dir": "/data/vendor/fac_sources/FTM_AP",
+        "picture_name": "FrontCameraATAJPG",
+        "outputsize": "2592x1944",
+        "pic_format": "JPEG",
+        "auto_takepicture_delay": 2000
+      },
+      "requestComm": [
+        "FrontCamera"
+      ]
+    },
+    {
+      "showName": "Camera_RAW_Flashlight",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 0,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "takepicture_not_save_picture": false,
+        "auto_takepicture": true,
+        "is_open_flashLight": true,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "picture_dir": "/data/vendor/fac_sources/FTM_AP",
+        "picture_name": "MainCameraATAFlash",
+        "auto_takepicture_delay": 2000,
+        "pic_format": "RAW10",
+        "pic_compression": ""
+      },
+      "requestComm": [
+        "MainCamera"
+      ]
+    },
+    {
+        "showName": "LCD_R"
+    },
+    {
+        "showName": "LCD_G"
+    },
+    {
+        "showName": "LCD_B"
+    },
+    {
+        "showName": "LCD_W"
+    },
+    {
+        "showName": "LCD_BL"
+    },
+    {
+        "showName": "LCD_GR"
+    },
+    {
+      "showName": "Camera_Flashlight",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 0,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "takepicture_not_save_picture": false,
+        "auto_takepicture": true,
+        "is_open_flashLight": true,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "picture_dir":"/data/vendor/fac_sources/FTM_AP",
+        "picture_name": "MainCameraATAJPGFlash",
+        "outputsize": "4160x3120",
+        "pic_format": "JPEG",
+        "auto_takepicture_delay": 2000
+      },
+      "requestComm": [
+        "MainCamera"
+      ]
+    }
+  ]
+}
